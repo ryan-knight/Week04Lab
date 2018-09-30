@@ -51,6 +51,6 @@ public class LoginServlet extends HttpServlet
             getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
             return;
         }
-        response.sendRedirect("/home");
+        response.sendRedirect(request.getContextPath()+"/home");
     }
 }
